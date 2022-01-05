@@ -1,0 +1,154 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101820ff;
+  /* color: red; */
+}
+
+.landingFont {
+  font-family: "Spectral", serif;
+}
+
+.commonFont {
+  font-family: "Lora", serif;
+  font-weight: 550;
+}
+
+.bg-light {
+  /* background-color: bisque !important; */
+  color: #fff;
+}
+.cardHeight {
+  height: 21pc;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.navClass {
+  text-decoration: none;
+}
+.navFont {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-size: 45px;
+}
+.navFontTwo {
+  font-family: "Epilogue", sans-serif;
+}
+.btn-secondary {
+  color: #000;
+  box-shadow: 0px 1px 6px 2px #000;
+}
+
+.navItems {
+  justify-content: flex-end;
+}
+
+.bg-light {
+  --bs-bg-opacity: 0;
+  box-shadow: 0px 1px 9px 2px #000;
+  background-color: #6c757d;
+}
+
+svg {
+  font-size: 2pc;
+  margin-right: 8px;
+  box-shadow: 1px 3px 6px 0px #666060;
+  margin-left: 10px;
+  color: #000;
+  /* transition: box-shadow 0.15s ease-in-out; */
+}
+
+.navbar-toggler {
+  /* background-color: #101820ff; */
+  border: 1px solid #000;
+  font-size: 1.2rem;
+}
+.navbar-toggler-icon {
+  color: #0d6efd;
+}
+
+.authFont {
+  font-family: "Archivo", sans-serif;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.25rem;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: 4px 14px 15px 2px #000000;
+}
+
+.card-footer {
+  background-color: #fff;
+  border-top: none;
+}
+
+.card-header {
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.card-body {
+  padding: 0rem 0rem;
+}
+
+/* for .form-control 
+ 
+ border: #117ae4a8
+
+ 
+ */
+.form-control {
+  /* border: 1px solid #480bdc; */
+  box-shadow: 0px 0px 6px 1px #b57beaa6;
+}
+.input {
+  box-shadow: none !important;
+  /* background-color:  */
+}
+
+.adjustLandingButtons {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: 20rem;
+}
+
+.btn-cntrl {
+  margin-bottom: -1rem;
+}

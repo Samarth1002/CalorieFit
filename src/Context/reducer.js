@@ -1,0 +1,4 @@
+export const SET_CONTACT = "SET_CONTACT";
+export const UPADTE_CONTACT = "UPADTE_CONTACT";
+export const SET_LOADING = "SET_LOADING";
+export const SET_SINGLE_CONTACT = "SET_SINGLE_CONTACT";
