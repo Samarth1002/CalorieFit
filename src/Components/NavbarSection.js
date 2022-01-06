@@ -29,8 +29,8 @@ const NavbarSection = () => {
         </Link>
       </NavbarBrand>
       <NavbarText className="d-flex">
-        <span className="text-center commonFont">
-          {context.user?.email ? `Hi, ${context.user.email}` : ""}acnalcnacacln
+        <span className="text-center commonFont mx-4">
+          {context.user?.email ? `Hi, ${context.user.email}` : ""}
         </span>
       </NavbarText>
       {isOpen === true ? (
