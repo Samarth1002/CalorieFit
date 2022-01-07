@@ -38,7 +38,9 @@ const MealStructure = ({ addInCart, heading, mealCart }) => {
                   ADD
                 </Button>
               </CardBody>
-              <CardFooter className="text-center commonFont">{`as per 100 grams`}</CardFooter>
+              <CardFooter className="text-center commonFont">
+                {meal.cal} Cal / 100 grams
+              </CardFooter>
             </Card>
           </Col>
         ))}

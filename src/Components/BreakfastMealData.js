@@ -7,7 +7,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_avocado.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 160,
   },
   {
     id: v4(),
@@ -15,7 +15,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_banana.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 89,
   },
   {
     id: v4(),
@@ -23,15 +23,15 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_blueberries.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 57,
   },
   {
     id: v4(),
-    title: "Coffee",
-    path: "Images/Breakfast/morning_coffee.jpg",
+    title: "Jackfruit",
+    path: "Images/Breakfast/morning_jackfruit.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 94,
   },
   {
     id: v4(),
@@ -39,7 +39,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_grapes.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 69,
   },
   {
     id: v4(),
@@ -47,7 +47,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_kiwi.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 61,
   },
   {
     id: v4(),
@@ -55,7 +55,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_orange.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 47,
   },
   {
     id: v4(),
@@ -63,7 +63,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_papaya.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 32,
   },
   {
     id: v4(),
@@ -71,7 +71,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_pineapple.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 50,
   },
   {
     id: v4(),
@@ -79,7 +79,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_raspberries.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 53,
   },
   {
     id: v4(),
@@ -87,7 +87,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_strawberry.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 33,
   },
   {
     id: v4(),
@@ -95,7 +95,7 @@ const BreakfastMealData = [
     path: "Images/Breakfast/morning_watermelon.jpg",
     Qty: 0,
     sum: 0,
-    cal: 100,
+    cal: 30,
   },
 ];
 

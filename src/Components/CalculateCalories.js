@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Row, Col, Container, ListGroupItem, ListGroup } from "reactstrap";
 import { userAuthContext } from "../Context/context";
@@ -12,6 +12,7 @@ const CalculateCalories = ({ cartItem }) => {
 
   const context = useContext(userAuthContext);
 
+  
   return (
     <Container className="py-5">
       <h2 className="text-center text-warning commonFont">

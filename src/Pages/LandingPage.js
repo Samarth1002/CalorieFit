@@ -19,6 +19,7 @@ const LandingPage = ({ title }) => {
 
         <div className="d-flex justify-content-center align-items-center">
           <NavLink
+          id="NavLink"
             tag={Link}
             to="/signin"
             className="text-black navClass "

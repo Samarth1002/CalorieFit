@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MealStructure from "../Components/MealStructure";
 import MealCart from "../Components/MealCart";
 import { Container, Row, Col } from "reactstrap";
@@ -41,6 +41,16 @@ const LunchMealSection = () => {
   const removeMeal = (item) => {
     setLunchCart(lunchCart.filter((element) => element.id !== item.id));
   };
+  useEffect(() => {
+    let localStorageCart = localStorage.getItem("lunchCart");
+    if (localStorageCart) {
+      return setLunchCart(JSON.parse(localStorageCart));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("lunchCart", JSON.stringify(lunchCart));
+  }, [lunchCart]);
 
   return (
     <lunchContext.Provider value={LunchMealData}>

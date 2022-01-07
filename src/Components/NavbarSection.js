@@ -24,7 +24,11 @@ const NavbarSection = () => {
   return (
     <Navbar color="light" expand="lg" dark className="container bg-Nav">
       <NavbarBrand className="m-0 p-0">
-        <Link to="/" className="navClass text-white navFont ">
+        <Link
+          id="RouterNavLink"
+          to="/"
+          className="navClass text-white navFont "
+        >
           CalorieFit
         </Link>
       </NavbarBrand>
@@ -45,19 +49,11 @@ const NavbarSection = () => {
               <NavItem className="text-center">
                 <NavLink
                   tag={Link}
+                  id="RouterNavLink"
                   className="navClass text-white m-2 navFontTwo"
                   to="/logoutsection"
                 >
                   Logout
-                </NavLink>
-              </NavItem>
-              <NavItem className="text-center">
-                <NavLink
-                  tag={Link}
-                  className="navClass text-white m-2 navFontTwo"
-                  to="/mealsection"
-                >
-                  MealSection
                 </NavLink>
               </NavItem>
             </>
@@ -65,6 +61,7 @@ const NavbarSection = () => {
             <>
               <NavItem className="text-center">
                 <NavLink
+                  id="RouterNavLink"
                   tag={Link}
                   className="navClass text-white m-2 navFontTwo"
                   to="/signin"
@@ -74,6 +71,7 @@ const NavbarSection = () => {
               </NavItem>
               <NavItem className="text-center">
                 <NavLink
+                  id="RouterNavLink"
                   tag={Link}
                   className="navClass text-white m-2 navFontTwo"
                   to="/signup"

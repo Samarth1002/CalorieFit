@@ -11,7 +11,7 @@ import { userAuthContext } from "../Context/context";
 
 const LogoutSection = () => {
   const context = useContext(userAuthContext);
-
+  console.log("CONTEXT IS: ", context);
   const navigate = useNavigate();
 
   // const handleCancelButton = () => {
@@ -25,11 +25,11 @@ const LogoutSection = () => {
   };
 
   if (!context.user?.uid) {
+    localStorage.clear();
+  }
+  if (!context.user?.uid) {
     return <Navigate to="/signin" />;
   }
-  // if (context.user?.uid) {
-  //   handleCancelButton();
-  // }
 
   return (
     <Container className="py-4 ">

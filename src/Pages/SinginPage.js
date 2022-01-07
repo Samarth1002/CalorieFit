@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import {
   Col,
   Container,
@@ -48,6 +48,14 @@ const SinginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     handleSignin();
+  };
+
+  const handleDummyEnter = () => {
+    setEmail("abc@xyz.com");
+    setPassword(123456);
+
+    console.log("email", email);
+    console.log("pass", password);
   };
 
   if (context.user?.uid) {
@@ -102,8 +110,17 @@ const SinginPage = () => {
                 </FormGroup>
               </CardBody>
               <CardFooter>
-                <Button block color="warning ">
+                <Button block color="warning" className="commonFont">
                   Signin
+                </Button>
+                <Button
+                  color="warning"
+                  block
+                  type="submit"
+                  className="text-center my-2 commonFont"
+                  onClick={() => handleDummyEnter()}
+                >
+                  Dummy Signin
                 </Button>
                 <p className="text-muted tect-black m-2">
                   Not an existing member ?

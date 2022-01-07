@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { userAuthContext } from "../Context/context";
 import {
   Card,
@@ -59,6 +59,9 @@ const SignUpPage = () => {
     handleSignup();
   };
 
+
+  
+
   if (context.user?.uid) {
     return <Navigate to="/landingsection" />;
   }
@@ -76,37 +79,6 @@ const SignUpPage = () => {
                 SignUp Here
               </CardHeader>
               <CardBody>
-                {/* /*    <FormGroup row>
-                   <Label for="fname" sm="3">
-                    First Name
-                  </Label>
-                  <Col sm="8">
-                    <Input
-                      type="text"
-                      id="fname"
-                      name="fname"
-                      placeholder="Enter first name here"
-                      value={fname}
-                      onChange={(e) => setFname(e.target.value)}
-                      // onBlur={(e) => console.log("Blur effect triggered")}
-                    />
-                  </Col>
-                </FormGroup>
-                <FormGroup row>
-                  <Label for="lname" sm="3">
-                    Last Name
-                  </Label>
-                  <Col sm="8">
-                    <Input
-                      id="lname"
-                      name="lname"
-                      placeholder="Enter last name here"
-                      value={lname}
-                      onChange={(e) => setLname(e.target.value)}
-                    />
-                  </Col>
-                </FormGroup> */}
-
                 <FormGroup row>
                   <Label for="email" sm={3}>
                     Email
@@ -116,7 +88,7 @@ const SignUpPage = () => {
                       type="email"
                       id="email"
                       name="email"
-                      placeholder="Enter email here"
+                      placeholder="eg abc@xyz.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -131,7 +103,7 @@ const SignUpPage = () => {
                       type="password"
                       id="password"
                       name="password"
-                      placeholder="Enter minimum 6 digit number"
+                      placeholder="minimum 6 digits"
                       value={password}
                       onChange={(e) => {
                         setPassword(e.target.value);
@@ -144,6 +116,7 @@ const SignUpPage = () => {
                 <Button block color="warning" type="submit">
                   Signup
                 </Button>
+                
               </CardFooter>
             </Form>
           </Card>

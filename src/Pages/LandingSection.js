@@ -1,4 +1,4 @@
-import React from "react";
+import React   from "react";
 import { Container, Row, Col, Button } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 const LandingSection = () => {

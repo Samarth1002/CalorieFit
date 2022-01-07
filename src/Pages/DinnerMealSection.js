@@ -9,18 +9,6 @@ import DinnerMealData from "../Components/DinnerMealData";
 const DinnerMealSection = () => {
   const [dinnerCart, setDinnerCart] = useState([]);
 
-  // useEffect(() => {
-  //   localStorage.setItem("DinnerCartItems", JSON.stringify(dinnerCart));
-  // }, [dinnerCart]);
-
-  // useEffect(() => {
-  //   let localDinnerCart = localStorage.getItem(dinnerCart);
-  //   console.log("This is Local Dinner Cart: ", localDinnerCart);
-  //   if (localDinnerCart) {
-  //     return setDinnerCart(JSON.parse(localDinnerCart));
-  //   }
-  // }, []);
-
   const removeOneMeal = (item) => {
     setDinnerCart(
       dinnerCart.map((element) =>
@@ -54,6 +42,15 @@ const DinnerMealSection = () => {
   const removeMeal = (item) => {
     setDinnerCart(dinnerCart.filter((element) => element.id !== item.id));
   };
+
+  useEffect(() => {
+    let localCart = localStorage.getItem("dinnerCart");
+    return localCart ? setDinnerCart(JSON.parse(localCart)) : [];
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("dinnerCart", JSON.stringify(dinnerCart));
+  }, [dinnerCart]);
 
   return (
     <dinnerContext.Provider value={DinnerMealData}>

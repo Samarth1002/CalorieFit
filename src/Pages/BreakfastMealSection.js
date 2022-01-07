@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Row, Col, Container } from "reactstrap";
 import { breakfastContext } from "../Context/context";
 import BreakfastMealData from "../Components/BreakfastMealData";
 import MealStructure from "../Components/MealStructure";
 import CalculateCalories from "../Components/CalculateCalories";
 import MealCart from "../Components/MealCart";
+import { userAuthContext } from "../Context/context";
 
 const BreakfastSection = () => {
   const [breakfastCart, setBreakfastCart] = useState([]);
@@ -39,12 +40,9 @@ const BreakfastSection = () => {
 
   useEffect(() => {
     let localStorageCart = localStorage.getItem("BreakfastCart");
-    console.log("The LocalStorage is : ", localStorageCart);
     if (localStorageCart) {
       return setBreakfastCart(JSON.parse(localStorageCart));
     }
-
-    
   }, []);
 
   useEffect(() => {
